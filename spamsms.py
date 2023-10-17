@@ -113,9 +113,6 @@ print("\033[1;35m╔════════════════════
 print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[3] \033[1;32mVÀO TOOL SPAM SMS + CALL 3   \033[1;35m║ ")
 print("\033[1;35m╚═══════════════════════════════════════╝")
 print("\033[1;35m╔═══════════════════════════════════════╗")
-print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[4] \033[1;32mVÀO TOOL SPAM SMS + CALL 4   \033[1;35m║ ")
-print("\033[1;35m╚═══════════════════════════════════════╝")
-print("\033[1;35m╔═══════════════════════════════════════╗")
 print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[0] \033[1;32mQUAY LẠI MENU TOOL          \033[1;35m ║ ")
 print("\033[1;35m╚═══════════════════════════════════════╝")
 print("\033[1;34m⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦")
@@ -124,10 +121,8 @@ if chon == 1 :
 	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/spamsmsv1.py').text)
 elif chon == 2 :
 	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/spamsmsv2.py').text)
-if chon == 3 :
+elif chon == 3 :
 	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/spamsmsv3.py').text)
-elif chon == 4 :
-	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/spamsmsv4.py').text)
 elif chon == 0 :
 	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevgop/main/gop.py').text)
 else :
