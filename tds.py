@@ -116,7 +116,10 @@ print("\033[1;35m╔════════════════════
 print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[4] \033[1;32mVÀO TOOL TDS FULL JOB       \033[1;35m ║ ")
 print("\033[1;35m╚═══════════════════════════════════════╝")
 print("\033[1;35m╔═══════════════════════════════════════╗")
-print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[5] \033[1;32mVÀO TOOL TDS INSTAGRAM      \033[1;35m ║ ")
+print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[5] \033[1;32mVÀO TOOL TDS PRO5 ĐA LUỒNG  \033[1;35m ║ ")
+print("\033[1;35m╚═══════════════════════════════════════╝")
+print("\033[1;35m╔═══════════════════════════════════════╗")
+print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[6] \033[1;32mVÀO TOOL TDS INSTAGRAM      \033[1;35m ║ ")
 print("\033[1;35m╚═══════════════════════════════════════╝")
 print("\033[1;35m╔═══════════════════════════════════════╗")
 print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[0] \033[1;32mQUAY LẠI MENU TOOL          \033[1;35m ║ ")
@@ -132,6 +135,8 @@ elif chon == 3 :
 elif chon == 4 :
 	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsfulljob.py').text)
 elif chon == 5 :
+	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsdaluong.py').text)
+elif chon == 6 :
 	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsig.py').text)
 elif chon == 0 :
 	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevgop/main/gop.py').text)
