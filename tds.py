@@ -110,13 +110,16 @@ print("\033[1;35m╔════════════════════
 print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[2] \033[1;32mVÀO TOOL TDS PRO5            \033[1;35m║ ")
 print("\033[1;35m╚═══════════════════════════════════════╝")
 print("\033[1;35m╔═══════════════════════════════════════╗")
-print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[3] \033[1;32mVÀO TOOL TDS FACEBOOK       \033[1;35m ║ ")
+print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[3] \033[1;32mVÀO TOOL TDS PRO5 ĐA LUỒNG   \033[1;35m║ ")
+print("\033[1;35m╚═══════════════════════════════════════╝")
+print("\033[1;35m╔═══════════════════════════════════════╗")
+print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[3] \033[1;32mVÀO TOOL TDS FACEBOOK V1    \033[1;35m ║ ")
+print("\033[1;35m╚═══════════════════════════════════════╝")
+print("\033[1;35m╔═══════════════════════════════════════╗")
+print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[5] \033[1;32mVÀO TOOL TDS FACEBOOK V2    \033[1;35m ║ ")
 print("\033[1;35m╚═══════════════════════════════════════╝")
 print("\033[1;35m╔═══════════════════════════════════════╗")
 print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[4] \033[1;32mVÀO TOOL TDS FULL JOB       \033[1;35m ║ ")
-print("\033[1;35m╚═══════════════════════════════════════╝")
-print("\033[1;35m╔═══════════════════════════════════════╗")
-print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[5] \033[1;32mVÀO TOOL TDS PRO5 ĐA LUỒNG  \033[1;35m ║ ")
 print("\033[1;35m╚═══════════════════════════════════════╝")
 print("\033[1;35m╔═══════════════════════════════════════╗")
 print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[6] \033[1;32mVÀO TOOL TDS INSTAGRAM      \033[1;35m ║ ")
@@ -129,14 +132,16 @@ chon = int(input('\033[1;33mnhn\033[1;95m@\033[1;36mNamDev$ '))
 if chon == 1 :
 	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdstiktok.py').text)
 elif chon == 2 :
-	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsfbv1.py').text)
+	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdspro5.py').text)
 elif chon == 3 :
-	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsfbv2.py').text)
-elif chon == 4 :
-	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsfulljob.py').text)
-elif chon == 5 :
 	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsdaluong.py').text)
+elif chon == 4 :
+	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsfbv1.py').text)
+elif chon == 5 :
+	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsfbv2.py').text)
 elif chon == 6 :
+	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsfulljob.py').text)
+elif chon == 7 :
 	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsig.py').text)
 elif chon == 0 :
 	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevgop/main/gop.py').text)
