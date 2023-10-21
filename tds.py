@@ -131,7 +131,7 @@ if chon == 1 :
 elif chon == 2 :
 	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsfbpro5.py').text)
 elif chon == 3 :
-	exec(requests.get('hhttps://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsfb.py').text)
+	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsfb.py').text)
 elif chon == 4 :
 	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsfulljob.py').text)
 elif chon == 5 :
