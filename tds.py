@@ -129,9 +129,9 @@ chon = int(input('\033[1;33mnhn\033[1;95m@\033[1;36mNamDev$ '))
 if chon == 1 :
 	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdstiktok.py').text)
 elif chon == 2 :
-	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsfbpro5.py').text)
+	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsfbv1.py').text)
 elif chon == 3 :
-	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsfb.py').text)
+	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsfbv2.py').text)
 elif chon == 4 :
 	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsfulljob.py').text)
 elif chon == 5 :
