@@ -158,7 +158,7 @@ elif chon == 4 :
 elif chon == 5 :
 	os.system('xdg-open https://namhoang131.github.io/tangcau/'); 
 elif chon == 6 :
-	os.system('xdg-open https://namnguyen131.github.io/hongtet/'); 
+	os.system('xdg-open https://hongtet.n625music.repl.co/'); 
 elif chon == 7 :
 	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/buffmemtele.py').text)
 elif chon == 8 :
