@@ -82,26 +82,24 @@ now=datetime.now()
 os.system("cls" if os.name == "nt" else "clear")
 sleep(0)
 banner=f"""
-            \033[1;36m╭─⋞─────────────────────────────────────────────────────╮
-            \033[1;31m███╗   ██╗ █████╗ ███╗   ███╗    ██████  ███████╗██╗   ██╗          
-            \033[1;32m████╗  ██║██╔══██╗████╗ ████║    ██╔══██╗██╔════╝██║   ██║          
-            \033[1;33m██╔██╗ ██║███████║██╔████╔██║    ██║  ██║█████╗  ╚██╗ ██╔╝          
-            \033[1;34m██║╚██╗██║██╔══██║██║╚██╔╝██║    ██║  ██║██╔══╝   ╚████╔╝           
-            \033[1;35m██║ ╚████║██║  ██║██║ ╚═╝ ██║    ██████╔╝███████╗  ╚██╔╝            
-            \033[1;36m╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝    ╚═════╝ ╚══════╝   ╚═╝   
-            \033[1;34m Youtube : \033[1;37mhttps://youtube.com/@NamTool1
-            \033[1;34m Nhóm Zalo : \033[1;37mhttps://zalo.me/g/kfmgqm225
-            \033[1;34m Facebook   : \033[1;37mhttps://facebook.com/nam.nhn131 
-            \033[1;36m╰─────────────────────────────────────────────────────⋟─╯ 
-            \033[1;31m                TOOL TRAO ĐỔI SUB
-            \033[1;36m╰─────────────────────────────────────────────────────⋟─╯
+\033[1;31m┌════════════════════════════════════════════════════════┐
+\033[1;31m███╗   ██╗ █████╗ ███╗   ███╗    ██████  ███████╗██╗   ██╗          
+\033[1;32m████╗  ██║██╔══██╗████╗ ████║    ██╔══██╗██╔════╝██║   ██║          
+\033[1;33m██╔██╗ ██║███████║██╔████╔██║    ██║  ██║█████╗  ╚██╗ ██╔╝          
+\033[1;34m██║╚██╗██║██╔══██║██║╚██╔╝██║    ██║  ██║██╔══╝   ╚████╔╝           
+\033[1;35m██║ ╚████║██║  ██║██║ ╚═╝ ██║    ██████╔╝███████╗  ╚██╔╝            
+\033[1;36m╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝    ╚═════╝ ╚══════╝   ╚═╝   
+\033[1;34m┠════════════════════════════════════════════════════════┨
+\033[1;32m ➯ Cre   : Nguyễn Hoàng Nam                                         
+\033[1;36m ➯ Loại Tool : Trao Đổi Sub                                                                 
+\033[1;34m└════════════════════════════════════════════════════════┘
+{trang} ➩ Ngày{trang} : {vang}{ngay_hom_nay}{lam} |{trang} Tháng{trang}: {vang}{thang_nay} {lam}| {trang}Năm{trang}: {vang}{nam_}{lam} | {trang}Thời Gian: {vang}{time}
+{trang} ➩ Thành Phố : {vang}{city} {lam}|{trang} Khu Vực: {vang}{region} {lam}| {trang} Quốc gia: {vang}{country} {lam}| {trang} Tọa độ: {vang}{latitude}, {longitude} {lam}| {trang} Nhiệt độ: {vang}{weather_description}
 """
 for X in banner:
   sys.stdout.write(X)
   sys.stdout.flush() 
   sleep(0.00)
-print(f"{trang} ➩ Ngày{trang} : {do}{ngay_hom_nay}{vang} |{luc} Tháng{trang}: {do}{thang_nay} {vang}| {luc}Năm{trang}: {do}{nam_}{vang} | {luc}Thời Gian: {do}{time}")
-print(f'{trang} ➩ IP Hiện Tại Của Bạn : {vang}{ip}')
 print("\033[1;34m⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦⏦")
 print("\033[1;35m╔═══════════════════════════════════════╗")
 print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[1] \033[1;32mVÀO TOOL TDS TIKTOK        \033[1;35m  ║ ")
@@ -110,19 +108,16 @@ print("\033[1;35m╔════════════════════
 print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[2] \033[1;32mVÀO TOOL TDS PRO5            \033[1;35m║ ")
 print("\033[1;35m╚═══════════════════════════════════════╝")
 print("\033[1;35m╔═══════════════════════════════════════╗")
-print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[3] \033[1;32mVÀO TOOL TDS PRO5 ĐA LUỒNG   \033[1;35m║ ")
+print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[3] \033[1;32mVÀO TOOL TDS FACEBOOK       \033[1;35m ║ ")
 print("\033[1;35m╚═══════════════════════════════════════╝")
 print("\033[1;35m╔═══════════════════════════════════════╗")
-print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[4] \033[1;32mVÀO TOOL TDS FACEBOOK V1    \033[1;35m ║ ")
+print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[4] \033[1;32mVÀO TOOL TDS FULL JOB       \033[1;35m ║ ")
 print("\033[1;35m╚═══════════════════════════════════════╝")
 print("\033[1;35m╔═══════════════════════════════════════╗")
-print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[5] \033[1;32mVÀO TOOL TDS FACEBOOK V2    \033[1;35m ║ ")
+print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[5] \033[1;32mVÀO TOOL TDS PRO5 ĐA LUỒNG  \033[1;35m ║ ")
 print("\033[1;35m╚═══════════════════════════════════════╝")
 print("\033[1;35m╔═══════════════════════════════════════╗")
-print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[6] \033[1;32mVÀO TOOL TDS FULL JOB       \033[1;35m ║ ")
-print("\033[1;35m╚═══════════════════════════════════════╝")
-print("\033[1;35m╔═══════════════════════════════════════╗")
-print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[7] \033[1;32mVÀO TOOL TDS INSTAGRAM      \033[1;35m ║ ")
+print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[6] \033[1;32mVÀO TOOL TDS INSTAGRAM      \033[1;35m ║ ")
 print("\033[1;35m╚═══════════════════════════════════════╝")
 print("\033[1;35m╔═══════════════════════════════════════╗")
 print("\033[1;35m║ \033[1;31m[\033[1;33m</>\033[1;31m]\033[1;36m[0] \033[1;32mQUAY LẠI MENU TOOL          \033[1;35m ║ ")
@@ -132,16 +127,14 @@ chon = int(input('\033[1;33mnhn\033[1;95m@\033[1;36mNamDev$ '))
 if chon == 1 :
 	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdstiktok.py').text)
 elif chon == 2 :
-	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdspro5.py').text)
+	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsfbpro5.py').text)
 elif chon == 3 :
-	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsdaluong.py').text)
+	exec(requests.get('hhttps://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsfb.py').text)
 elif chon == 4 :
-	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsfbv1.py').text)
-elif chon == 5 :
-	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsfbv2.py').text)
-elif chon == 6 :
 	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsfulljob.py').text)
-elif chon == 7 :
+elif chon == 5 :
+	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsdaluong.py').text)
+elif chon == 6 :
 	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/tdsig.py').text)
 elif chon == 0 :
 	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevgop/main/gop.py').text)
