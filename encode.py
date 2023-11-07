@@ -79,8 +79,54 @@ from pystyle import *
 from time import strftime
 from datetime import datetime, timedelta
 now=datetime.now()
-os.system("cls" if os.name == "nt" else "clear")
-sleep(0)
+def check_internet_connection():
+    try:
+        response = requests.get("http://www.google.com", timeout=5)
+        return True
+    except requests.ConnectionError:
+        return False
+
+# Kiểm tra kết nối internet
+if check_internet_connection():
+    print(f"{luc}Vui Lòng Chờ!!!")
+    sleep(0.1)
+else:
+    print(f"{do}Vui Lòng Kiểm Tra Kết NốI!!!")
+    sys.exit()
+def get_location_by_ip():
+    try:
+        response = requests.get("https://ipinfo.io")
+        data = response.json()
+
+        city = data.get("city")
+        region = data.get("region")
+        country = data.get("country")
+        loc = data.get("loc").split(",")
+        latitude, longitude = loc if len(loc) == 2 else (None, None)
+
+        return city, region, country, latitude, longitude
+    except Exception as e:
+        print(f"Lỗi: {e}")
+        return None, None, None, None, None
+city, region, country, latitude, longitude = get_location_by_ip()
+def get_weather():
+    try:
+        # Lấy thông tin vị trí từ dịch vụ ipinfo.io
+        response = requests.get("https://ipinfo.io")
+        data = response.json()
+        location = data.get("loc").split(",")
+        latitude, longitude = location
+        # Lấy thông tin thời tiết từ trang web công cộng
+        base_url = f"https://wttr.in/{latitude},{longitude}?format=%t"
+        response = requests.get(base_url)
+        weather_description = response.text.strip()
+        return weather_description
+    except Exception as e:
+        print(f"Lỗi: {e}")
+        return None
+
+weather_description = get_weather()
+System.Clear()
 banner=f"""
 \033[1;31m┌════════════════════════════════════════════════════════┐
 \033[1;31m███╗   ██╗ █████╗ ███╗   ███╗    ██████  ███████╗██╗   ██╗          

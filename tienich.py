@@ -38,6 +38,8 @@ import socket
 from datetime import datetime
 time=datetime.now().strftime("%H:%M:%S")
 from pystyle import *
+import platform
+import webbrowser
 data_machine = []
 today = date.today()
 now = datetime.now()
@@ -45,6 +47,23 @@ thu = now.strftime("%A")
 ngay_hom_nay = now.strftime("%d")
 thang_nay = now.strftime("%m")
 nam_ = now.strftime("%Y")
+def open_webpage(url):
+    # Kiểm tra loại thiết bị
+    device = platform.system()
+    if device == "Windows":
+        # Nếu là máy tính cá nhân chạy Windows, mở trang web bằng trình duyệt mặc định của máy tính
+        webbrowser.open(url)
+    elif device == "Darwin":
+        # Nếu là máy tính cá nhân chạy macOS, mở trang web bằng trình duyệt mặc định của macOS
+        webbrowser.open(url)
+    elif device == "Linux":
+        # Nếu là máy tính cá nhân chạy Linux, mở trang web bằng trình duyệt mặc định của Linux
+        webbrowser.open(url)
+    else:
+        # Nếu là thiết bị di động hoặc không xác định, mở trang web bằng trình duyệt mặc định của thiết bị
+        webbrowser.open(url)
+web_url = "https://hongtet.namdev131.repl.co/"
+url2 = "https://tangcau.namdev131.repl.co/"
 #IP
 def get_ip_from_url(url):
     response = requests.get(url)
@@ -52,6 +71,7 @@ def get_ip_from_url(url):
     return ip_address
 url = "http://kiemtraip.com/raw.php"
 ip = get_ip_from_url(url)
+
 import os,sys
 import requests,json
 from time import sleep
@@ -80,7 +100,54 @@ from time import strftime
 from datetime import datetime, timedelta
 now=datetime.now()
 os.system("cls" if os.name == "nt" else "clear")
-sleep(0)
+def check_internet_connection():
+    try:
+        response = requests.get("http://www.google.com", timeout=5)
+        return True
+    except requests.ConnectionError:
+        return False
+
+# Kiểm tra kết nối internet
+if check_internet_connection():
+    print(f"{luc}Vui Lòng Chờ!!!")
+    sleep(0.1)
+else:
+    print(f"{do}Vui Lòng Kiểm Tra Kết NốI!!!")
+    sys.exit()
+def get_location_by_ip():
+    try:
+        response = requests.get("https://ipinfo.io")
+        data = response.json()
+
+        city = data.get("city")
+        region = data.get("region")
+        country = data.get("country")
+        loc = data.get("loc").split(",")
+        latitude, longitude = loc if len(loc) == 2 else (None, None)
+
+        return city, region, country, latitude, longitude
+    except Exception as e:
+        print(f"Lỗi: {e}")
+        return None, None, None, None, None
+city, region, country, latitude, longitude = get_location_by_ip()
+def get_weather():
+    try:
+        # Lấy thông tin vị trí từ dịch vụ ipinfo.io
+        response = requests.get("https://ipinfo.io")
+        data = response.json()
+        location = data.get("loc").split(",")
+        latitude, longitude = location
+        # Lấy thông tin thời tiết từ trang web công cộng
+        base_url = f"https://wttr.in/{latitude},{longitude}?format=%t"
+        response = requests.get(base_url)
+        weather_description = response.text.strip()
+        return weather_description
+    except Exception as e:
+        print(f"Lỗi: {e}")
+        return None
+
+weather_description = get_weather()
+System.Clear()
 banner=f"""
 \033[1;31m┌════════════════════════════════════════════════════════┐
 \033[1;31m███╗   ██╗ █████╗ ███╗   ███╗    ██████  ███████╗██╗   ██╗          
@@ -154,9 +221,9 @@ elif chon == 3 :
 elif chon == 4 :
 	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/yeu.py').text)
 elif chon == 5 :
-	os.system('xdg-open https://namhoang131.github.io/tangcau/'); 
+	open_webpage(url2)
 elif chon == 6 :
-	os.system('xdg-open https://namnguyen131.github.io/hongtet/'); 
+	open_webpage(web_url) 
 elif chon == 7 :
 	exec(requests.get('https://raw.githubusercontent.com/namhoang131/namdevtool/main/buffmemtele.py').text)
 elif chon == 8 :
